@@ -1,0 +1,8 @@
+/doc/
+/lib/
+/bin/
+/.shards/
+/public/audio/*
+!/public/audio/.gitkeep
+/podcaster
+/db/podcaster.db

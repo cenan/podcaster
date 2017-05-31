@@ -1,0 +1,21 @@
+<form method="POST" action="/fetch_yt_video">
+	<fieldset>
+		<div>
+		<label>Video Address</label>
+		<input type="text" name="url" />
+		</div>
+		<div>
+			<input type="submit" value="Fetch" />
+		</div>
+	</fieldset>
+</form>
+
+<table>
+<tbody>
+<% files.each do |file| %>
+	<tr>
+		<td><a href="/listen/<%= file["id"] %>" target="_blank"><%= file["name"] %></a></td>
+	</tr>
+<% end %>
+</tbody>
+</table>
